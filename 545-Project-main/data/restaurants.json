@@ -1,0 +1,41 @@
+{
+    "tacoriaHoboken":
+    {
+        "name": "Tacoria",
+        "city": "Hoboken",
+        "rating": 4,
+        "image": "images/tacoria2.jpg",
+        "website": "https://tacoria.com/location/hoboken/",
+        "link": "tacoria.html"
+    },
+
+    "toastxbowlHoboken":
+    {
+        "name": "Toast X Bowl",
+        "city": "Hoboken",
+        "rating": 5,
+        "image": "images/toast.webp",
+        "website": "https://www.toastxbowl.com/",
+        "link": "toastxbowl.html"  
+    },
+
+    "tonyboloneysHoboken":
+    {
+        "name": "Tony Boloney's", 
+        "city": "Hoboken",
+        "rating": 4, 
+        "image": "images/tacopizza.jpeg",
+        "website": "https://www.tonyboloneys.com/locations/hoboken",
+        "link": "tonyboloneys.html"
+    },
+
+    "eastlaHoboken":
+    {
+        "name": "East LA", 
+        "city": "Hoboken",
+        "rating": 3, 
+        "image": "images/tacos.png",
+        "website": "https://www.ilovemargaritas.org/",
+        "link": "eastla.html"
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of the Town</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.min.css">
+</head>
+<body>
+    <header>
+        <div id="test">
+            <h1><a href="index.html" id="title"><img src="images/logo.png" alt="Taste of the Town" width="260" height="100"></a></h1>
+            <!-- <div id="slogan">Discover the best local places to eat!</div> -->
+        </div>
+        <div id="test2">
+            <button id="sign-in" class="nineth">Sign-in</button>
+            <div class="search eighth">
+                <input type="text" id="searchInput" placeholder="Search Restaurants/Towns..." aria-label="Search Input">
+                <button id="searchButton" aria-label="Search Button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="first">Home</a>
+        <a href="reviews.html" class="second" >Reviews</a>
+        <a href="restaurants.html" class="third">Restaurants</a>
+        <a href="trending.html" class="fourth">Trending</a>
+    </nav>
+
+    <div class="content">
+        <div id="about">
+            <h2 id="about-header" class="fifth">About </h2>
+            <hr>
+            <div>
+                <p id="about-content"></p>
+                 Support Local Businesses!
+            </div>
+        </div>
+
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2 id='restaurants-header'>Popular Restaurants in </h2>
+                <hr>
+                <div id="restaurants" class="sixth"></div>
+            </div>
+
+            <div class="grid-item">
+                <h2>Recent Reviews</h2>
+                <hr>
+                <div id="reviews" class="seventh"></div>
+            </div>
+        </div>
+
+
+        <div id="pop-up" class="pop-up">
+            <div class="pop-up-inner">
+                <button id="review-quit" aria-label="Close">
+                    <i class="fa fa-times"></i>
+                </button>
+                <div class="pop-up-content">
+                    <h3 id="pop-up-header"></h3>
+                    <textarea id="pop-up-input" placeholder="Enter..." required aria-label="Pop-Up Input"></textarea>
+                    <ul class="center star-rating">
+                        <li data-value="1">&#9733;</li>
+                        <li data-value="2">&#9733;</li>
+                        <li data-value="3">&#9733;</li>
+                        <li data-value="4">&#9733;</li>
+                        <li data-value="5">&#9733;</li>
+                    </ul>
+                    <button id="review-post">Post Review</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+           <a href="javascript:tutorial()">Help</a>
+           <a href="https://github.com/alay02/545-Project" target="_blank">GitHub</a>
+           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmTtMz-YhyRtHkTyFTkpEuddhyQi0QHQAb7n013wLokXrNbg/viewform" target="_blank">Survey</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/intro.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function tutorial() {
+            introJs().setOptions({
+            steps:[
+                {
+                    title:'Welcome!',
+                    intro:'Let\'s go through a quick tour!'
+                },
+                {
+                    element:document.querySelector('.first'),
+                    title:'Welcome!',
+                    intro:'Clicking this will take you back to the page you are currently viewing'
+                },
+                {
+                    element:document.querySelector('.second'),
+                    title:'Welcome!',
+                    intro:'Click to Look at what people have to say about the restaurants in your town!'
+                },
+                {
+                    element:document.querySelector('.third'),
+                    title:'Welcome!',
+                    intro:'Click to look at some of the best restaurants your town has to offer!'
+                },
+                {
+                    element:document.querySelector('.fourth'),
+                    title:'Welcome!',
+                    intro:'Click to see the latest and greatest food trends and where to get them near you!'
+                },
+                {
+                    element:document.querySelector('.fifth'),
+                    title:'Welcome!',
+                    intro:'Read up on the area!'
+                },
+                {
+                    element:document.querySelector('.sixth'),
+                    title:'Welcome!',
+                    intro:'Click restaurant names or images to view more, click "website" to view website, or click "Write a review" to tell us about your experience!'
+                },
+                {
+                    element:document.querySelector('.seventh'),
+                    title:'Welcome!',
+                    intro:'Read some recent comments, click on the restaurant to view more!'
+                },
+                {
+                    element:document.querySelector('.eighth'),
+                    title:'Welcome!',
+                    intro:'Type in a restaurant or town, and click on the search icon to get more info!'
+                },
+                {
+                    element:document.querySelector('.nineth'),
+                    title:'Welcome!',
+                    intro:'Click to sign-in to post post reviews and access more content!'
+                },
+            ]}).start();
+        }
+
+        if (localStorage.getItem('hasSeenIntro') !== 'true') {
+            tutorial();
+        }
+
+        localStorage.setItem('hasSeenIntro', 'true');    
+
+    </script>
+       
+</body>
+</html>

@@ -1,0 +1,15 @@
+[
+    {
+        "user": "Shivam Patel",
+        "restaurant": "tacoriaHoboken",
+        "content": "I've been going to the one at Rutgers for years, I'm so glad they opened one in Hoboken. I always get their carne asada tacos with extra beans. I definitely recommend.", 
+        "rating": 4
+    },
+
+    {
+        "user": "Krish Nair",
+        "restaurant": "toastxbowlHoboken", 
+        "content": "Toast X Bowl is SO good!! I get myself a caramel frappe with extra whipped cream everytime I go... and I got alot! The staff is super friendly and the food is really good as well. Definitely one of my favorite spots in Hoboken",
+        "rating": 5
+    }
+]
