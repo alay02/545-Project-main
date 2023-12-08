@@ -32,10 +32,10 @@
     </nav>
 
     <div class="content">
-    <main>
+    <main class="center">
       <section>
         <h1 class="center">Tacoria Hoboken</h1>
-        <img class="center" src="images/tacoria.jpg" alt="Tacoria Hoboken" />
+        <img class="center equal-size-image" src="images/tacoria.jpg" alt="Tacoria Hoboken" />
       </section>
 
       <section>
@@ -58,8 +58,8 @@
         <div class="comments-section">
             <h3>Comments</h3>
             <form id="comment-form">
-                <input type="text" id="name-input" placeholder="Your name" required />
-                <textarea id="comment-input" placeholder="Add a comment..." required></textarea>
+                <input type="text" id="name-input" placeholder="Your name" required aria-label="NameBox"/>
+                <textarea id="comment-input" placeholder="Add a comment..." required aria-label="TextBox"></textarea>
                 <button type="submit">Post Comment</button>
             </form>
             <ul id="comments-list">
